@@ -34,6 +34,8 @@ while abs(deri_J1) > 0.001 and abs(deri_J0) > 0.001:
 
 print(theta_0, theta_1)
 
-plt.plot(X, Y)
+df.plot.scatter("YearsExperience", "Salary", c="black")
 plt.plot(X, theta_1*X+theta_0)
+plt.xlabel("Years of Experiences")
+plt.ylabel("Salary")
 plt.show()
